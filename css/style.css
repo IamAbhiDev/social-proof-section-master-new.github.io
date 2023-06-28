@@ -46,5 +46,5 @@ select {
 
     /*Font Family*/
 
-    -ff-primary: 'League Spartan', sans-serif;
+    --ff-primary: 'League Spartan', sans-serif;
 }
