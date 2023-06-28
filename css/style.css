@@ -96,3 +96,35 @@ body {
     font-size: clamp(1rem, 4.7vw, 1.2rem);
     font-weight: var(--medium);
 }
+
+/*Ratings*/
+
+.social__ratings {
+    text-align: center;
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.social__ratings__row {
+    background-color: var(--light-grayish-magenta);
+    border-radius: .5rem;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.social__ratings__row__stars {
+    background: url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: left, 25%, center, 75%, right;
+    background-size: contain;
+    height: 1rem;
+    width: 7rem;
+}
+
+.social__ratings__row__text {
+    color: var(--very-dark-magenta);
+    font-weight: var(--bold);
+}
