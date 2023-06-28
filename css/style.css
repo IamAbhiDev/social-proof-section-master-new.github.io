@@ -77,6 +77,8 @@ body {
     padding: 8vh 6.25%;
 }
 
+/*Header*/
+
 .social__header {
     text-align: center;
     display: grid;
@@ -92,4 +94,5 @@ body {
 .social__header__text {
     color: var(--dark-grayish-magenta);
     font-size: clamp(1rem, 4.7vw, 1.2rem);
+    font-weight: var(--medium);
 }
