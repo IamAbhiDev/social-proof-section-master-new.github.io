@@ -128,3 +128,46 @@ body {
     color: var(--very-dark-magenta);
     font-weight: var(--bold);
 }
+
+/*Testimonials*/
+
+.social__testimonials {
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.social__testimonials__card {
+    background-color: var(--very-dark-magenta);
+    border-radius: .4rem;
+    display: grid;
+    gap: 1.65rem;
+    padding: 2.5rem 2rem 2.4rem;
+    font-size: 1.04rem;
+}
+
+.social__testimonials__card__profile {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social__testimonials__card__profile__img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.social__testimonials__card__profile__user__name {
+    color: var(--white);
+    font-weight: var(--bold);
+}
+
+.social__testimonials__card__profile__user__status {
+    color: #f96dac;
+    font-weight: var(--medium);
+}
+
+.social__testimonials__card__review {
+    color: var(--white);
+    line-height: 1.33;
+}
