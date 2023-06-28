@@ -23,3 +23,28 @@ textarea,
 select {
     font: inherit;
 }
+
+/*Root Settings*/
+
+:root {
+    /*Primary*/
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /*Neutral*/
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Font Weight*/
+
+    --light: 400;
+    --medium: 500;
+    --bold: 700;
+
+    /*Font Family*/
+
+    -ff-primary: 'League Spartan', sans-serif;
+}
