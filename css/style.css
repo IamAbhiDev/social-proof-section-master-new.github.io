@@ -55,7 +55,7 @@ body {
     background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
     background-position: left top, right bottom;
-    background-size: 100%;
+    /* background-size: 100%; */
     font-family: var(--ff-primary);
     min-height: 100vh;
     display: grid;
@@ -170,4 +170,26 @@ body {
 .social__testimonials__card__review {
     color: var(--white);
     line-height: 1.33;
+}
+
+/*Responsive Web Design*/
+
+@media screen and (min-width: 45rem) {
+    .social__ratings {
+        padding: 0 20%;
+        margin: 2rem 0;
+    }
+
+    .social__ratings__row {
+        grid-template-columns: 1fr 1.6fr;
+        padding: 1.2rem 1rem;
+    }
+
+    .social__ratings__row__text {
+        justify-self: start;
+    }
+
+    .social__testimonials {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
