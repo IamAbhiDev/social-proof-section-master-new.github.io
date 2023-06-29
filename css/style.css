@@ -55,7 +55,6 @@ body {
     background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
     background-position: left top, right bottom;
-    /* background-size: 100%; */
     font-family: var(--ff-primary);
     min-height: 100vh;
     display: grid;
@@ -87,14 +86,16 @@ body {
 
 .social__header__heading {
     color: var(--very-dark-magenta);
-    font-size: clamp(2rem, 10.4vw, 3.6rem);
+    font-size: 2.4rem;
     line-height: .8;
+    letter-spacing: -2px;
 }
 
 .social__header__text {
     color: var(--dark-grayish-magenta);
-    font-size: clamp(1rem, 4.7vw, 1.2rem);
+    font-size: clamp(1rem, 4.7vw, 1.1rem);
     font-weight: var(--medium);
+    line-height: 1.4;
 }
 
 /*Ratings*/
@@ -139,7 +140,7 @@ body {
 
 .social__testimonials__card {
     background-color: var(--very-dark-magenta);
-    border-radius: .4rem;
+    border-radius: .5rem;
     display: grid;
     gap: 1.65rem;
     padding: 2.5rem 2rem 2.4rem;
@@ -175,6 +176,10 @@ body {
 /*Responsive Web Design*/
 
 @media screen and (min-width: 45rem) {
+    .social__header__heading {
+        font-size: 2.6rem;
+    }
+
     .social__ratings {
         padding: 0 20%;
         margin: 2rem 0;
@@ -191,5 +196,83 @@ body {
 
     .social__testimonials {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Responsive Design - Desktop*/
+
+@media screen and (min-width: 65rem) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left top, right bottom;
+        padding: 0 6%;
+    }
+
+    .social {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header ratings'
+            'testimonials testimonials'
+        ;
+        column-gap: min(15vw, 14rem);
+        row-gap: 4.4rem;
+        padding-top: 7vh;
+    }
+
+    .social__header {
+        grid-area: header;
+        text-align: start;
+        gap: 3.5vh;
+    }
+
+    .social__header__heading {
+        font-size: clamp(2.6rem, 4vw, 3.5rem);
+        line-height: .85;
+    }
+
+    .social__ratings {
+        grid-area: ratings;
+        align-content: center;
+        margin: 0;
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+
+    .social__ratings__row {
+        width: 27.5rem;
+        grid-template-columns: 1fr 2.5fr;
+        padding: 1.1rem 2rem;
+        gap: 2rem;
+        align-content: center;
+    }
+
+    .social__ratings__row:nth-child(1) {
+        transform: translateX(-6rem);
+    }
+
+    .social__ratings__row:nth-child(2) {
+        transform: translateX(-3rem);
+    }
+
+    .social__ratings__row__text {
+        font-size: 1.1rem;
+    }
+
+    .social__testimonials {
+        grid-area: testimonials;
+        gap: 1.8rem;
+    }
+
+    .social__testimonials__card {
+        padding: 2.5rem 2rem;
+    }
+
+    .social__testimonials__card:nth-child(2) {
+        transform: translateY(1rem);
+    }
+
+    .social__testimonials__card:nth-child(3) {
+        transform: translateY(2rem);
     }
 }
