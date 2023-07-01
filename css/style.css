@@ -93,7 +93,7 @@ body {
 
 .social__header__text {
     color: var(--dark-grayish-magenta);
-    font-size: clamp(1rem, 4.7vw, 1.1rem);
+    font-size: clamp(1rem, 4.7vw, 1.13rem);
     font-weight: var(--medium);
     line-height: 1.4;
 }
@@ -156,6 +156,12 @@ body {
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.social__testimonials__card__profile__user {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
 }
 
 .social__testimonials__card__profile__user__name {
@@ -242,7 +248,7 @@ body {
     .social__ratings__row {
         width: 27.5rem;
         grid-template-columns: 1fr 2.5fr;
-        padding: 1.1rem 2rem;
+        padding: 1.2rem 2rem;
         gap: 2rem;
         align-content: center;
     }
